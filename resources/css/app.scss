@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.heading {
-    color: red;
+
+.home-bg {
+    background: url("https://bootstrapmade.com/demo/templates/iPortfolio/assets/img/profile-img.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
