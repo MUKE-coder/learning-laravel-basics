@@ -20,9 +20,11 @@ Route::get('/', function () {
 Route::get("/about",function(){
     return view("about");
 });
-Route::get("/product/{name}",function($name){
+Route::get("/product",function(){
 
-    return view("product",['name'=>$name]);
+    return view("product");
 });
-
+Route::get("/service",function(){
+    return view("service");
+});
 ?>

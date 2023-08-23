@@ -34,6 +34,7 @@ $products=[
             <img src="{{ asset($product['image']) }}" alt="">
             <h2>{{ $product['title'] }}</h2>
             <p>{{ $product['description'] }}</p>
+            <x-button class="bg-green-600 text-white" text="View details" link="/product"/>
            </div>
         @endforeach
     </div>
