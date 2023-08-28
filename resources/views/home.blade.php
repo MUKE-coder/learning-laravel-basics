@@ -25,10 +25,10 @@ $products=[
 ]
 @endphp
 <div class="h-full w-full flex items-center justify-center">
-    <h1 class="text-6xl">Home Page</h1>
+    {{-- <h1 class="text-6xl">Home Page</h1> --}}
 <div class="w-full">
     {{-- <img src="{{ asset('images/backend.jpg') }}" alt=""> --}}
-    <div class="flex justify-center gap-4">
+    {{-- <div class="flex justify-center gap-4">
         @foreach ($products as $product )
         <div class="w-[300px]">
             <img src="{{ asset($product['image']) }}" alt="">
@@ -37,7 +37,8 @@ $products=[
             <x-button class="bg-green-600 text-white" text="View details" link="/product"/>
            </div>
         @endforeach
-    </div>
+    </div> --}}
+    @livewire('todos')
 </div>
 </div>
 @endsection
