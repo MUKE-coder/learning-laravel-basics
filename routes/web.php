@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TodoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,4 +29,5 @@ Route::get("/product",function(){
 Route::get("/service",function(){
     return view("service");
 });
+Route::resource('todos',TodoController::class);
 ?>
